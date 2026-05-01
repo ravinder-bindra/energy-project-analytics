@@ -43,7 +43,6 @@ European nations are decarbonizing faster than any other region. North America a
 
 ## Repository Structure
 
-\\\
 energy-project-analytics/
 ├── data/             # Raw CSV + cleaned outputs (energy.db is gitignored)
 ├── sql/              # SQL queries against the SQLite database
@@ -52,7 +51,6 @@ energy-project-analytics/
 ├── dashboard/        # Plotly dashboard (in progress)
 ├── shiny_app/        # R Shiny app (in progress)
 └── README.md
-\\\
 
 ---
 
@@ -62,13 +60,13 @@ energy-project-analytics/
 
 **Statistical analysis (Python).** Loaded SQL results into Pandas, generated EDA (summary statistics, correlation matrix), then fit a linear regression predicting renewable share from log GDP per capita and year. Both predictors were statistically significant (p < 0.001), but R² of 0.022 confirmed that wealth and time alone don't explain renewable adoption — country-specific factors (geography, policy, resources) drive most variation.
 
-**Tidy data analysis (R).** Replicated the SQL decade-trend analysis in dplyr to validate cross-language consistency. Built a regional trajectory analysis using \pivot_wider()\, \inner_join()\, and faceted ggplot for cross-country comparison.
+**Tidy data analysis (R).** Replicated the SQL decade-trend analysis in dplyr to validate cross-language consistency. Built a regional trajectory analysis using `pivot_wider()`, `inner_join()`, and faceted ggplot for cross-country comparison.
 
 ---
 
 ## Setup
 
-\\\powershell
+```powershell
 # 1. Clone the repo
 git clone https://github.com/ravinder-bindra/energy-project-analytics.git
 cd energy-project-analytics
@@ -86,7 +84,7 @@ pip install jupyter pandas numpy scikit-learn statsmodels matplotlib seaborn
 
 # 5. Install R dependencies (in RStudio Console)
 # install.packages(c("dplyr", "ggplot2", "readr", "tidyr", "scales"))
-\\\
+```
 
 ---
 
@@ -104,4 +102,4 @@ pip install jupyter pandas numpy scikit-learn statsmodels matplotlib seaborn
 
 **Ravinder Deep Singh Bindra**
 B.Tech Data Science, Punjab Engineering College, Chandigarh
-[ravinderbindra26@gmail.com](mailto:ravinderbindra26@gmail.com)
+[ravinderbindra26@gmail.com](mailto:ravinderbindra26@gmail.com) • [github.com/ravinder-bindra](https://github.com/ravinder-bindra)
